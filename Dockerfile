@@ -1,7 +1,6 @@
 FROM alpine:3.11
-MAINTAINER Pavel Janku <pavel@getmedia.digital>
 
-ARG MIGRATIONS_VERSION="2.2.1"
+ARG MIGRATIONS_VERSION="3.1.2"
 
 RUN apk --update add bash php7 php7-ctype php7-iconv php7-dom php7-mbstring php7-tokenizer php7-xml php7-xmlwriter php7-simplexml php7-mysqli php7-json php7-zlib php7-pdo php7-phar php7-pdo_sqlite php7-pdo_mysql php7-pdo_pgsql && \
     rm -rf /var/cache/apk/*
